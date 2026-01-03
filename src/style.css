@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/5 border border-white/10 backdrop-blur-2xl rounded-3xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.01] hover:bg-white/10 hover:border-white/30 hover:shadow-glow-teal;
+  }
+
+  .glass-panel-strong {
+    @apply bg-white/10 border border-white/20 backdrop-blur-3xl rounded-3xl transition-all duration-500 hover:-translate-y-1 hover:scale-[1.01] hover:bg-white/20 hover:border-white/40 hover:shadow-glow-magenta;
+  }
+
+  .gradient-ring {
+    @apply relative before:absolute before:inset-[-1px] before:rounded-[inherit] before:bg-gradient-to-r before:from-solanaTeal before:via-solanaPurple before:to-solanaMagenta before:opacity-60 before:-z-10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-solanaTeal via-solanaPurple to-solanaMagenta bg-clip-text text-transparent;
+  }
+
+  .primary-btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-solanaTeal via-solanaPurple to-solanaMagenta text-slate-900 font-semibold shadow-glow-teal hover:shadow-glow-magenta transition-all duration-300 hover:-translate-y-0.5 hover:brightness-110 hover:scale-[1.03];
+  }
+
+  .secondary-btn {
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-white/20 bg-white/5 text-slate-50 text-sm font-medium hover:bg-white/10 hover:border-white/40 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02];
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+}
+
+@layer utilities {
+  .bg-animated-dark {
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 0% 0%, rgba(56, 189, 248, 0.08), transparent 55%),
+      radial-gradient(circle at 100% 100%, rgba(147, 51, 234, 0.12), transparent 55%),
+      radial-gradient(circle at 50% 120%, rgba(236, 72, 153, 0.08), transparent 60%);
+    background-repeat: no-repeat;
+    background-size: 160% 160%;
+    animation: bg-dark-shift 24s ease-in-out infinite alternate;
+    mix-blend-mode: screen;
+    opacity: 0.4;
+  }
+
+  @keyframes bg-dark-shift {
+    0% {
+      background-position: 0% 0%, 100% 100%, 50% 120%;
+    }
+    50% {
+      background-position: 30% 10%, 80% 80%, 40% 110%;
+    }
+    100% {
+      background-position: 60% 20%, 60% 90%, 60% 100%;
+    }
+  }
+
+  .cursor-snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    background: radial-gradient(circle, #ffffff 0%, #aee 70%);
+    border-radius: 50%;
+    opacity: 0.8;
+    mix-blend-mode: screen;
+    animation: cursor-fade-out 1.5s forwards;
+  }
+
+  @keyframes cursor-fade-out {
+    0% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.5);
+    }
+  }
+
+  .gric-slogan {
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #e5f3ff;
+    text-shadow:
+      0 0 10px rgba(56, 189, 248, 0.7),
+      0 0 20px rgba(129, 140, 248, 0.6);
+    filter: drop-shadow(0 0 18px rgba(15, 23, 42, 0.9));
+    animation:
+      gric-float-up 2s ease-out forwards,
+      gric-sparkle 2s ease-in-out infinite;
+  }
+
+  @media (min-width: 768px) {
+    .gric-slogan {
+      font-size: 0.8rem;
+    }
+  }
+
+  @keyframes gric-float-up {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0) scale(0.96);
+    }
+    15% {
+      opacity: 1;
+      transform: translate3d(0, 8px, 0) scale(1);
+    }
+    75% {
+      opacity: 1;
+      transform: translate3d(0, -8px, 0) scale(1.03);
+    }
+    100% {
+      opacity: 0;
+      transform: translate3d(0, -24px, 0) scale(1.06);
+    }
+  }
+
+  @keyframes gric-sparkle {
+    0%,
+    100% {
+      text-shadow:
+        0 0 10px rgba(56, 189, 248, 0.7),
+        0 0 20px rgba(129, 140, 248, 0.6);
+      opacity: 0.9;
+    }
+    40% {
+      text-shadow:
+        0 0 14px rgba(244, 114, 182, 0.9),
+        0 0 26px rgba(251, 191, 36, 0.65);
+      opacity: 1;
+    }
+    70% {
+      text-shadow:
+        0 0 8px rgba(56, 189, 248, 0.5),
+        0 0 18px rgba(129, 140, 248, 0.5);
+      opacity: 0.8;
+    }
+  }
+
+  .tokenomics-ring {
+    transform-origin: 50% 50%;
+    animation: tokenomics-rotate 32s linear infinite;
+  }
+
+  @keyframes tokenomics-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "greenwich-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Greenwich Solana meme token site",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "solana",
+    "dexscreener",
+    "meme-token",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}
