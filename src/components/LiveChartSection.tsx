@@ -104,7 +104,7 @@ const LiveChartSection: React.FC = () => {
           </div>
           <div className="h-80 md:h-50 overflow-hidden rounded-3xl ring-1 ring-emerald-300/40 bg-slate-950/80">
             <iframe
-src="https://dexscreener.com/solana/MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump?embed=1&theme=dark&trades=0&info=0"
+src="https://dexscreener.com/solana/MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump?embed=1&theme=dark&trades=0&info=0"
               title="Greenwich / SOL chart"
               className="h-full w-full"
               loading="lazy"

@@ -1,4 +1,4 @@
-const PAIR_ADDRESS = 'MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump';
+const PAIR_ADDRESS = 'MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump';
 const DEXSCREENER_URL = `https://api.dexscreener.com/latest/dex/pairs/solana/${PAIR_ADDRESS}`;
 
 const generateChartPoints = (priceUsd, length = 60, change5m = null, change1h = null) => {

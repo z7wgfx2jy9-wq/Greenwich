@@ -5,7 +5,7 @@ import fetch from 'node-fetch';
 const app = express();
 const PORT = process.env.PORT || 4001;
 
-const PAIR_ADDRESS = 'MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump';
+const PAIR_ADDRESS = 'MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump';
 const DEXSCREENER_URL = `https://api.dexscreener.com/latest/dex/pairs/solana/${PAIR_ADDRESS}`;
 
 app.use(cors());

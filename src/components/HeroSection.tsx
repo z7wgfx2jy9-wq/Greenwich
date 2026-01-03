@@ -2,7 +2,7 @@ import React from 'react';
 import ScrollReveal from './ScrollReveal';
 import CopyAddressButton from './CopyAddressButton';
 
-const CONTRACT_ADDRESS = 'MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump';
+const CONTRACT_ADDRESS = 'MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump';
 
 const HeroSection: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
           <div className="glass-panel-strong gradient-ring ny-glow-ring mt-8 space-y-4 p-4 shadow-glow-teal md:p-6">
             <div className="flex flex-wrap items-center gap-4 md:gap-6">
               <a
-href="https://dexscreener.com/solana/MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump"
+href="https://dexscreener.com/solana/MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump"
                 target="_blank"
                 rel="noreferrer"
                 className="primary-btn text-sm md:text-base"

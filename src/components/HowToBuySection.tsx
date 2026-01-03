@@ -2,7 +2,7 @@ import React from 'react';
 import ScrollReveal from './ScrollReveal';
 import CopyAddressButton from './CopyAddressButton';
 
-const CONTRACT_ADDRESS = 'MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump';
+const CONTRACT_ADDRESS = 'MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump';
 
 const steps = [
   {
@@ -61,7 +61,7 @@ const HowToBuySection: React.FC = () => {
           <div className="flex flex-col items-start gap-3 md:items-end">
             <CopyAddressButton address={CONTRACT_ADDRESS} />
             <a
-href="https://dexscreener.com/solana/MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump"
+href="https://dexscreener.com/solana/MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump"
               target="_blank"
               rel="noreferrer"
               className="secondary-btn"

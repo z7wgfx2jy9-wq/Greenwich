@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CONTRACT_ADDRESS = 'MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump';
+const CONTRACT_ADDRESS = 'MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump';
 
 const Footer: React.FC = () => {
   return (

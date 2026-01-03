@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import CopyAddressButton from './CopyAddressButton';
 
-const CONTRACT_ADDRESS = 'MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump';
+const CONTRACT_ADDRESS = 'MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump';
 
 const FloatingIslandHeader: React.FC = () => {
   const [compact, setCompact] = useState(false);
@@ -86,7 +86,7 @@ const FloatingIslandHeader: React.FC = () => {
         {/* Центр: навигация (Dex / Pumpfun / X) — только десктоп */}
         <div className="hidden flex-1 items-center justify-center gap-2 md:flex">
           <a
-            href="https://dexscreener.com/solana/MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump"
+href="https://dexscreener.com/solana/MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump"
             target="_blank"
             rel="noreferrer"
             className="secondary-btn text-xs"
@@ -94,7 +94,7 @@ const FloatingIslandHeader: React.FC = () => {
             Dex
           </a>
           <a
-            href="https://pump.fun/coin/MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump"
+href="https://pump.fun/coin/MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump"
             target="_blank"
             rel="noreferrer"
             className="secondary-btn text-xs"
@@ -116,7 +116,7 @@ const FloatingIslandHeader: React.FC = () => {
           {/* Мобильные быстрые кнопки */}
           <div className="flex items-center gap-1.5 md:hidden">
             <a
-              href="https://dexscreener.com/solana/MVuxtBQJP2EhQnoTuPdNJuXemCtLyn6SzqGjL2upump"
+href="https://dexscreener.com/solana/MWKqARwwmCuag1K6siRG5NWgUWJV6V5uizbwLtppump"
               target="_blank"
               rel="noreferrer"
               className="secondary-btn px-2 py-1 text-[0.6rem]"
